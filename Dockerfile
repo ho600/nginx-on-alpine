@@ -1,8 +1,6 @@
-FROM python:3.10-alpine
+FROM python:3.12-alpine
 
 LABEL maintainer="Amon Ho <hoamon@ho600.com>"
-
-RUN apk add --no-cache curl ca-certificates
 
 COPY install-nginx-alpine.sh /
 
